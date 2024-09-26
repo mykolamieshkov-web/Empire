@@ -1,0 +1,47 @@
+.tradition {
+    @include responsive-block;
+    height: 630px;
+
+&__content {
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+
+}
+
+&__picture {
+    width: 33vw;
+    height: 30vw;
+    @include mobile {
+        width: 40vw;
+        height: 36vh;
+        
+    }
+
+}
+&__text {
+    flex-direction: column;
+    row-gap: 2.3rem;
+    width: 33vw;
+    justify-content: flex-end;
+    align-items: center;
+
+
+    h3 {
+        text-align: left;
+        text-wrap: balance;
+
+    }
+    p {
+        text-align: left;
+        text-wrap: pretty;
+
+    }
+    a { 
+        margin-inline: auto;
+        display: block;
+        
+    }
+}
+}

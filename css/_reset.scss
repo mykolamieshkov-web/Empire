@@ -1,0 +1,44 @@
+
+/* Обнуление стилей */
+ ul {
+  list-style: none;
+ }
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+
+ 
+   &:before,
+   &:after {
+     box-sizing: border-box;
+   }
+ }
+ 
+ :focus,
+ :active {
+   outline: none;
+ }
+ 
+a {
+  text-decoration: unset;
+  color: unset;
+}
+img {
+  max-width: 100%;
+}
+
+button {
+  all: initial;
+}
+
+div, nav, aside, input, form, header, main, footer  {
+  display: flex;  //Каждый контейнер флекс-элемент
+  
+}
+main {
+  flex-grow: 1;
+}
+
+

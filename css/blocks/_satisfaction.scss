@@ -1,0 +1,33 @@
+.satisfaction {
+    @include responsive-block;
+
+&__content {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    row-gap: 2.3rem;
+}
+
+&__text {
+    flex-direction: column;
+    row-gap: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    p {
+        text-align: left;
+        height: 48px;
+    }
+
+
+}
+
+&__picture {
+    width: 33vw;
+    height: 30vh;
+    @include mobile {
+        width: 85vw;
+        height: 50vh;
+    }
+
+}
+}

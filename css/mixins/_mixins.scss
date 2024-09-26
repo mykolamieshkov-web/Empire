@@ -1,0 +1,61 @@
+// пример миксина под резиновый текст:
+@mixin fluid-text {
+   font-size: clamp( 16px, 0.83vw, 18px);
+   line-height: 1;
+}
+
+ 
+ @mixin fluid-h1 {
+   font-size: clamp(41.88px, 2.18vw, 45px);
+   line-height: 1.2; /* H1: рассчитано по золотому сечению */
+ }
+ 
+ @mixin fluid-title {
+   font-size: clamp(25.89px, 1.35vw, 28px);
+   line-height: 1.1;
+   text-align: center;
+   text-wrap: balance;
+    /* Заголовки */
+ }
+// миксин ограничиющего контейнера: 
+@mixin container {
+   width: min(100% - 1rem, 100vw);
+   padding: 16px;
+   margin: 10px;
+   
+}
+// mixin отзывчивого  блока 
+@mixin responsive-block {
+   width: min( 100%, 100vw);
+   height: auto;
+   
+}
+@mixin visually-hidden {
+   position: absolute !important;
+   width: 1px !important;
+   height: 1px !important;
+   margin: -1px !important;
+   border: 0 !important;
+   padding: 0 !important;
+   white-space: nowrap !important;
+   clip-path: inset(100%) !important;
+   clip: rect(0 0 0 0) !important;
+   overflow: hidden !important;
+ }
+ @mixin button {
+   width: 120px;
+   height: 53px;
+   padding: 10px 5px;
+   border-radius: 8px;
+   border: none;
+   background-color: var(--button-color);
+   text-align: center;
+   color: var(--white-color);
+   font-size: 16px;
+   text-wrap: nowrap;
+   transition: background-color 3ms ease;
+   @include hover {
+      background-color: #8d4c14d1; 
+
+   }
+ }

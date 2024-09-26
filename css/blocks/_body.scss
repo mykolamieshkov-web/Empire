@@ -1,0 +1,49 @@
+body, html {
+ scroll-behavior: smooth;
+width: 100%;
+height: auto;
+min-height: 100%;
+font-family: "Gelasio", serif;
+font-optical-sizing: auto;
+font-weight: 400;   
+font-style: normal;
+color: var(--white-color);
+background-color:  var(--background-color);
+
+
+}
+// параграфы и ссылки с резиновым текстом
+a, p {
+    @include fluid-text;
+}
+a {
+    color: var(--white-color);
+    transition: color 0.3s ease;
+    @include hover {
+        color: var(--text-color);
+
+    } 
+}
+p,h1,h3 {
+    color: var(--text-color);
+}
+h1 {
+    @include fluid-h1;
+}
+h2, h3 {
+    @include fluid-title;
+}
+
+
+//   универсальный класс ограничиющего контейнера (применять не к блоку, а к контейнеру с содержимым, внутри главного блока)
+.content {
+    @include container;
+}
+
+// скрываем тескт-подсказку для кнопок
+.visually-hidden {
+    @include visually-hidden;
+}
+.button {
+    @include button;
+}

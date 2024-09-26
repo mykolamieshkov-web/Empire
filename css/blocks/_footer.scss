@@ -1,0 +1,14 @@
+.footer {
+    @include responsive-block;
+   text-align: center;
+    flex-direction: column;
+    row-gap: 4px;
+    height: 100px;
+    background-color: var(--accent-color);
+   p {
+    color: var(--white-color);
+    height: 42px;
+
+   }
+    
+}

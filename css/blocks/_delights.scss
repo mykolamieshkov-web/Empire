@@ -1,0 +1,39 @@
+.delights {
+    @include responsive-block;
+&__content {
+    height: 65vh;
+    gap: 1.1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    @include mobile {
+        flex-direction: column-reverse;
+        row-gap: 1.1rem;
+    }
+
+
+
+}
+
+&__text {
+    flex-direction: column;
+    row-gap: 2.2rem;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+
+&__picture {
+    width: 35vw;
+    aspect-ratio:1;
+    @include mobile {
+        width: 280px;
+        height: 285px;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+  
+}
+}
+// ------//

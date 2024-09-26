@@ -1,0 +1,69 @@
+.serve {
+    @include responsive-block;
+    background-color: var(--accent-color);
+
+&-content {
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+    @include mobile-s {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+
+&__text { 
+    flex-direction: column;
+    row-gap: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        color: var(--white-color);
+    }
+    p {
+        color: var(--white-color);
+        
+    }
+
+}
+&__text--picture {
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: url("../img/main/satisfaction/satisfaction.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+
+&__list {
+    row-gap: 1.2rem;
+    flex-direction: column;
+  display: flex;
+}
+&__list--item {
+ flex-direction: column;
+ row-gap: 1.1rem;
+ display: flex;
+
+    hr {
+        width: 30vw;
+        height: 0.3vh;
+        background-color: var(--white-color);
+        @include mobile-s {
+            margin-inline: auto;
+            display: block;
+        }
+
+    }
+    
+}
+}
+// -------

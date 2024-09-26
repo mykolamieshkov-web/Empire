@@ -1,0 +1,25 @@
+.final-cta{
+    @include responsive-block;
+
+&__content {
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.3rem;
+    flex-direction: column;
+}
+
+&__header {
+    flex-direction: column;
+    row-gap: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        text-align: center;
+
+    }
+    p {
+        text-align: center;
+    }
+}
+}
+
